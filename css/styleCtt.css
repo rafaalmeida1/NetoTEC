@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    background: #FF9C00;
+    padding: 10px;
+    position: relative;
+}
+
+#logo1 {
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoCentralizado {
+    text-align: center;
+}
+
+#buttonEmail {
+    width: 70px;
+    position: fixed;
+    padding: 15px;
+    right: 0;
+    bottom: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/*Sobre nos migrado*/
+
+#contato {
+    background: url(../assets/darkGrey.jpg) center/cover no-repeat;
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
+}
+
+/*Contato*/
+
+.formContainer {
+    width: 400px;
+    height: 300px;
+    background-color: #ffffffbb;
+    padding: 30px;
+    margin: 150px auto;
+}
+
+.formContainer h1 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.mb {
+    margin-bottom: 40px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #FF9C00;
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url(../assets/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 10px) center;
+}
+
+@media screen and (max-width: 500px) {
+    .formContainer {
+        max-width: 240px;
+        margin: 50px -10px;
+        padding: 30px;
+    }
+
+}

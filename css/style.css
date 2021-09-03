@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    background: #FF9C00;
+    padding: 10px;
+    position: relative;
+}
+
+#logo1 {
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+}
+
+/* .menu {
+    float: right;
+} */
+
+.meios {
+    margin-right: 15px;
+    position: absolute;
+    top: 50%;
+    right: -23%;
+    transform: translate(-50%, -50%);
+}
+
+.meios li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.links {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: #ff5e00;
+}
+
+#buttonEmail {
+    width: 70px;
+    position: fixed;
+    padding: 15px;
+    right: 0px;
+    bottom: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/*Serviços*/
+
+#oque_fazemos {
+    height: 250px;
+    background-image: url(../assets/sala.jpg);
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+#oque_fazemos li {
+    display: inline;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: #ffe;
+    font-size: 55px;
+    margin-right: 50px;
+}
+
+#oque_fazemos ul {
+    position: absolute;
+    top: 50%;
+    right: -53%;
+    transform: translate(-50%, -50%);
+}
+
+/*Sobre Nós*/
+
+#sobre_nos_link {
+    background: url(../assets/darkGrey.jpg) center/cover no-repeat;
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
+}
+
+#sobre_nos_link p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+}
+
+.description_neto {
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description_neto img {
+    margin-top: 25px;
+    width: 250px;
+    border: 2px solid #FF9C00;
+    border-radius: 50px;
+}
+
+.description_car {
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description_car img {
+    margin-top: 25px;
+    width: 400px;
+    border: 2px solid #FF9C00;
+    border-radius: 50px;
+}
+
+/*Localização*/
+
+#localizacao_link {
+    background-color: #FF9C00;
+    padding: 40px;
+}
+
+#localizacao_link h3 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.mapa_conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.map {
+    width: 70%;
+    height: 300px;
+    margin-left: 135px;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 500px;
+    }
+    #logo1 {
+        width: 180px;
+        margin-left: 80px;
+    }
+    .meios {
+        margin-right: 100px;
+        position: absolute;
+        top: 50%;
+        right: -20%;
+        transform: translate(-50%, -50%);
+    }
+    .meios li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #buttonEmail {
+        width: 70px;
+        
+        padding: 15px;
+        right: 0px;
+        bottom: 0;
+    }
+    
+
+    #oque_fazemos li {
+        display: block;
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        color: #ffe;
+        font-size: 35px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #oque_fazemos ul {
+        position: absolute;
+        top: 50%;
+        right: -10%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    #sobre_nos_link p {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 60px;
+    }
+
+    .description_neto {
+        float: none;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .description_car {
+        float: left;
+        margin: auto; 
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+
+    .description_car img {
+        margin-top: 25px;
+        width: 300px;
+        border: 2px solid #FF9C00;
+        border-radius: 50px;
+    }
+
+
+    
+    #localizacao_link h3 {
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-right: 40px;  
+    }
+    
+    .mapa_conteudo {
+        width: 940px;
+        margin: 0 auto;
+    }
+    
+    .map {
+        width: 70%;
+        height: 200px;
+        margin: 50px;
+    }
+    
+}
